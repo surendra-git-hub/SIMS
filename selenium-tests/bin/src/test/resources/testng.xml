@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Hospital Appointment System Tests" parallel="false" thread-count="1">
+    
+    <test name="Registration Tests">
+        <classes>
+            <class name="com.hospital.tests.RegisterTest">
+                <methods>
+                    <include name="testSuccessfulRegistration"/>
+                    <include name="testRegistrationWithWeakPassword"/>
+                    <include name="testRegistrationWithMismatchedPasswords"/>
+                    <include name="testRegistrationWithMissingFields"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="com.hospital.tests.LoginTest">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testLoginWithInvalidEmail"/>
+                    <include name="testLoginWithIncorrectPassword"/>
+                    <include name="testLoginWithEmptyCredentials"/>
+                    <include name="testSessionPersistenceAfterLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Doctors List Tests">
+        <classes>
+            <class name="com.hospital.tests.DoctorsTest">
+                <methods>
+                    <include name="testViewAllDoctors"/>
+                    <include name="testFilterDoctorsBySpecialization"/>
+                    <include name="testViewDoctorDetails"/>
+                    <include name="testCheckDoctorAvailability"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Appointment Tests">
+        <classes>
+            <class name="com.hospital.tests.AppointmentTest">
+                <methods>
+                    <include name="testSuccessfullyBookAppointment"/>
+                    <include name="testViewBookedAppointments"/>
+                    <include name="testCancelAppointment"/>
+                    <include name="testBookAppointmentWithPastDate"/>
+                    <include name="testRescheduleAppointment"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

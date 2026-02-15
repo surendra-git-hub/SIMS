@@ -1,0 +1,138 @@
+/* Appointments Page Styles */
+.appointments-page {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 80px);
+}
+
+.appointments-page h2,
+.appointments-page h3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.appointments-page h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.appointments-page h3 {
+  margin: 30px auto 20px;
+  font-size: 20px;
+}
+
+.appointments-page > button {
+  max-width: 1200px;
+  margin: 20px auto 30px;
+  display: block;
+}
+
+.booking-form,
+.appointments-list {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.booking-form {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.booking-form h3 {
+  margin-top: 0;
+}
+
+.appointments-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.appointment-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+}
+
+.appointment-header h4 {
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+}
+
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status.scheduled {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.completed {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.status.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.appointment-card p {
+  color: #666;
+  margin: 10px 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.appointment-card button {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .booking-form {
+    padding: 20px;
+  }
+
+  .appointments-list {
+    grid-template-columns: 1fr;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .form-buttons button {
+    width: 100%;
+  }
+}

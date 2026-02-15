@@ -1,0 +1,85 @@
+# .gitignore for Hospital Appointment System
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.orig
+
+# Build outputs
+build/
+dist/
+target/
+out/
+
+# Maven
+.m2/
+*.jar
+*.war
+
+# React
+build/
+.next/
+out/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Selenium/Test reports
+target/
+.surefire-reports/
+test-output/
+*.log
+logs/
+
+# IDE specific
+.classpath
+.project
+.settings/
+*.iml
+*.iws
+*.ipr
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# WebDriver cache
+.wdm/
+chromedriver
+
+# Node files
+server/node_modules
+frontend/node_modules
